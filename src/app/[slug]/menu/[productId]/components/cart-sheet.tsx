@@ -13,7 +13,7 @@ const CartSheet = () => {
                 <SheetHeader>
                     <SheetTitle className="text-left mb-4">Sacola</SheetTitle>
                 </SheetHeader>
-                <div className="py-5">
+                <div className="space-y-3">
                     {products.map(product => (
                         <CartProductItem product={product} key={product.id} />
                     ))}
