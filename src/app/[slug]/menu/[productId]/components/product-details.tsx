@@ -55,7 +55,6 @@ const ProductDetails = ({product}: ProductDetailsProps) => {
                         <h3 className="text-lg font-semibold">{formatCurrency(product.price)}</h3>
                         <div className="flex items-center gap-3 text-center">
                             <Button variant="outline" className="h-8 w-8 rounded-xl" onClick={handleDecreaseQuantity}><MinusIcon /></Button>
-                            
                             <p className="w-4">{quantity}</p>
                             <Button variant="destructive" className="h-8 w-8 rounded-xl" onClick={handleIncreaseQuantity}><PlusIcon /></Button>
                         </div>
