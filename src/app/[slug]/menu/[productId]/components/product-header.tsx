@@ -9,11 +9,13 @@ import { Button } from "@/components/ui/button";
 
 interface ProductHeaderProps {
   product: Pick<Product, "name" | "imageUrl">;
+  slug?: string;
 }
 
-const ProductHeader = ({ product }: ProductHeaderProps) => {
+const ProductHeader = ({ product, slug }: ProductHeaderProps) => {
   const router = useRouter();
   const handleBackClick = () => router.back();
+  const handleOrderListClick = () => router.push(`/${slug}/orders`);
 
   return (
     <div className="relative min-h-[222px] w-full">
@@ -35,6 +37,7 @@ const ProductHeader = ({ product }: ProductHeaderProps) => {
         variant="secondary"
         size="icon"
         className="absolute right-4 top-4 z-50 rounded-full"
+        onClick={handleOrderListClick}
       >
         <ScrollTextIcon />
       </Button>
