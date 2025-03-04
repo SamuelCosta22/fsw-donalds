@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Improvements for the future
+- Add order date and time
+- Add home screen with other restaurants
+- Improve styling on some pages and components
+- Add restaurant rating system (5 stars)
+- Add dashboard for restaurant to update order status
+- Add order sending via WhatsApp to restaurant
